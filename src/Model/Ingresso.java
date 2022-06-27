@@ -2,9 +2,12 @@ package Model;
 
 public class Ingresso {
 
+	
 	public static void main(String[] args) {
-
-        Sala Sala = new Sala();
+       
+		
+        
+		Sala Sala = new Sala();
         Distribuidora Distribuidora = new Distribuidora();
         Filme filme = new Filme();
         Sessao sessao = new Sessao();
@@ -24,16 +27,19 @@ public class Ingresso {
 	   sessao.setCapacidadeSessao(40);
 	   sessao.setHorario(16);
 	   sessao.setPreco("$40,00");
-	   
-	   
+		
 	  
        
 	   
 	   System.out.println("Numero da Sessao:" + sessao.getNumeroSessao() + "\n" +
 			              "Numero da sala:" + Sala.getNumeroSala() + "\n" + 
 			              "filme:" + filme.getTítulo() + "\n" +
-	                      "capacidade da sala:" + Sala.getCapacidade() + "\n" +
-			              "disponivel");
+	                      "audio da sessao:" + "DUBLADO" + "\n" +
+			              "distribuidora:" + Distribuidora.getNome() + "\n" +
+			              "capacidade da sala:" + Sala.getCapacidade() + " " +
+			              "DISPONIVEL" + "\n" +
+	                      "tipo do ingresso:" + "INTEIRO" + "\n" +
+			              "preço do ingresso:" + sessao.getPreco());
 	  
 	   
 	}
